@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: vagrant_host
-# Recipe:: default
+# Recipe:: dns_update
 #
 # The MIT License (MIT)
 # 
