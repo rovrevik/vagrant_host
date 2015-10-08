@@ -24,3 +24,15 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
+# assumed that the following are installed
+#   Xcode xcode-select --install
+# Homebrew is installed by the calling script if needed
+# Install and configure packages on the local machine
+
+if node[:platform] != 'mac_os_x'
+  log 'mac_os_x check' do
+    level :fatal
+    message "only for #{node[:vagrant_host][:platform]}"
+  end
+  return
+end
