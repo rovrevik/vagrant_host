@@ -24,3 +24,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
+# install dnsmasq locally. actual entries in dnsmasq don't get created until the vm is started
+dnsmasq
+
+# make the local resolver point to local dnsmasq
+resolver
