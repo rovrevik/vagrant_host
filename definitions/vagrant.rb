@@ -24,3 +24,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
+define :vagrant, :action => :install do
+  log "vagrant #{params[:action]}"
+end

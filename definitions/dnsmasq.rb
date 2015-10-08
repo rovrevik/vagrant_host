@@ -24,3 +24,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
+# run a lean dns server for the docker containers to use
+# anchor everything off of /usr/local/etc/ instead of /etc based on guidance from brew info dnsmasq
+# influenced by: Using Dnsmasq for local development on OS X http://passingcuriosity.com/2013/dnsmasq-dev-osx/
+# could use vagrant-hostsupdater?
+define :dnsmasq do
+  log "dnsmasq local_dns: #{node[:vagrant_host][:local_dns]}, dns_domain.name: #{node[:vagrant_host][:dns_domain][:name]}, dns_domain.address: #{node[:vagrant_host][:dns_domain][:address]}"
+end

@@ -24,3 +24,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
+define :resolver do
+  log "resolver resolver.update: #{node[:vagrant_host][:resolver][:update]}, dns_domain.name: #{node[:vagrant_host][:dns_domain][:name]}, resolver.nameserver: #{node[:vagrant_host][:resolver][:nameserver]}"
+end
